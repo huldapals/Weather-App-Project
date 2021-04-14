@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="src/styles.css" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;900&familydisplay=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a304d1973.js" crossorigin="anonymous"></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+   <div class="container">
+     <div class="weather-app">
+       <nav class="navbar navbar-light justify-content-center">       
+        <form class="d-flex" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input 
+                id = "cityInput"
+                type="search" 
+                placeholder="enter city here..." 
+                autocomplete="on"
+                class="form-control shadow-sm"
+                />
+            </div>
+            <div class="col-3">
+              <input 
+              id = "searchButton"
+              type="submit" 
+              value="search"
+              class="form-control btn btn-light shadow-sm"/>
+            </div>
+            <div class="col-3">
+              <input
+              class="form-control btn btn-primary shadow-sm w-100" 
+              id="submitPin" 
+              type="submit" 
+              value="Current" 
+               />
+            </div>
+          </div>
+      </form>
+      </nav>
+    
+      <h1 id="cityHeading"></h1>
+      <ul>
+        <li >
+          <span id="date-time"></span>
+        </li>
+        <li id="dayForecast"></li>   
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix">
+          <img 
+          src="images/cloud-sun.png"
+          alt="cloudy icon"
+          class="weather-icon float-left"
+          />
+              <span id="temperature">
+              
+              </span>
+              <span class="units">
+                <a href id="celsius-button">°C |</a>
+                <a href id="faranheit-button">°F</a>
+              </span>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul id="weather-conditions">
+            <li id="feels-like">
+              Feels Like: 
+            </li>
+            <li id="Humidity">
+              Humdity: 
+            </li>
+            <li id="wind">
+              Wind: 
+            </li>
+          </ul>
+        </div>
+      </div>
+
+   <!-- forecast -->
+    <div class="row" id="forecast">
+      <div class="col-md-2 col-sm-6 text-center">
+        <h3>Wed</h3>
+        <img src="images/cloud-sun.png" class="img-forecast-sm" alt="" />
+        <p>14°<span class="p-soft"> | 2°</span></p>
+      </div>
+      <div class="col-md-2 col-sm-6 text-center">
+        <h3>Thu</h3>
+        <img src="images/rain.png" class="img-forecast-sm" alt="" />
+        <p>10°<span class="p-soft"> | -1°</span></p>
+      </div>
+      <div class="col-md-2 col-sm-6 text-center">
+        <h3>Fri</h3>
+        <img src="images/sun.png" class="img-forecast-sm" alt="" />
+        <p>16°<span class="p-soft"> | 4°</span></p>
+      </div>
+      <div class="col-md-2 col-sm-6 text-center">
+        <h3>Sat</h3>
+        <img src="images/fog.png" 
+        class="img-forecast-sm" alt="" />
+        <p>8°<span class="p-soft"> | 0°</span></p>
+      </div>
+      <div class="col-md-2 col-sm-6 text-center">
+        <h3>Sun</h3>
+        <img src="images/wind.png" class="img-forecast-sm" alt="" />
+        <p>14°<span class="p-soft"> | 2°</span></p>
+      </div>
+    </div>
+    <p style="text-align: center;">
+        <button id="green">
+        </button>
+        <button id="blue">
+        </button>
+        <button id="pink">
+        </button>
+    </p>
+    </div>
+   </div>
+
+  <script src="src/index.js"></script>
+  </body>
+</html>

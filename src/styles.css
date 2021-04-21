@@ -35,6 +35,7 @@ li {
   line-height: 1;
   list-style: none;
   margin-left: 35px;
+  text-transform: capitalize;
 }
 
 .container {

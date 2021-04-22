@@ -35,6 +35,10 @@ li {
   line-height: 1;
   list-style: none;
   margin-left: 35px;
+  color: #787878;
+}
+
+li:first-letter {
   text-transform: capitalize;
 }
 

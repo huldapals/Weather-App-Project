@@ -58,7 +58,11 @@ document.querySelector("#faranheit-button").addEventListener("click", function(e
     document.querySelector("#Humidity").innerHTML = `Humidity: ${Math.round(response.data.main.humidity)} %`;
     document.querySelector("#wind").innerHTML= `Wind: ${Math.round(response.data.wind.speed)} km/h`;
     document.querySelector("#dayForecast").innerHTML = response.data.weather[0].description;
- }
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute("alt", response.data.weather[0].description);
+  }
+
 
 function searchCity(city){
     let apiKey = "d803ee58ce516713db5656619dac775a";

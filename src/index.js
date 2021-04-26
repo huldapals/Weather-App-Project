@@ -50,6 +50,33 @@ document.querySelector("#faranheit-button").addEventListener("click", function(e
   unitNumber.innerHTML = Math.round((temperature * 9/5) + 32);
 });
 
+//forecast
+function displayForecast(){
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function(day){
+    forecastHTML = forecastHTML + 
+        `
+          <div class="col-2">
+            <div class="weather-forecast-date">${day}</div>
+            <img 
+              src="" 
+              class="iconForecast" 
+              alt="" />
+            <p>
+              <span class="highTemp">14°</span>
+              <span class="lowTemp"> | 2°</span>
+            </p>
+          </div>
+        `;
+  })
+ 
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+}
+
  function showTemperature(response) {
    temperature = Math.round(response.data.main.temp);
     document.querySelector("#cityHeading").innerHTML = response.data.name;
@@ -94,4 +121,5 @@ navigator.geolocation.getCurrentPosition(showPosition);
 let pinButton = document.querySelector("#submitPin");
 pinButton.addEventListener("click", getCurrentLocation);
 
+displayForecast();
 

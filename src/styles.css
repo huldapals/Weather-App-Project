@@ -1,11 +1,12 @@
 body {
   font-family: "poppins", sans-serif;
-  background-color: rgb(251, 246, 251);
+  background-color: rgb(250, 246, 250);
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   padding: 20px;
+  padding-top: 30px;
   padding-left: 0px;
   line-height: 28px;
   font-weight: 300;
@@ -63,7 +64,7 @@ li:first-letter {
 }
 
 #temperature {
-  font-size: 65px;
+  font-size: 70px;
   font-weight: 400;
   text-align: left;
   line-height: 1;
@@ -72,7 +73,7 @@ li:first-letter {
 .units {
   position: relative;
   top: -36px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .clearfix {

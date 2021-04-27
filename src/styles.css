@@ -26,7 +26,7 @@ p {
 
 ul {
   margin: 0 0 10px;
-  padding: 0;
+  padding: 10px;
 }
 
 li {
@@ -41,6 +41,14 @@ li {
 
 li:first-letter {
   text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .container {

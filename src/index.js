@@ -54,7 +54,7 @@ document.querySelector("#faranheit-button").addEventListener("click", function(e
 function formatDay(timestamp) {
 let date = new Date(timestamp * 1000);
 let day = date.getDay();
-let days = ["sun", "Mon","Tue","Wed","Thu","Fri","Sat"];
+let days = ["Sun", "Mon","Tue","Wed","Thu","Fri","Sat"];
 
 return days[day];
 }

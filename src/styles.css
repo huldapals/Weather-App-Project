@@ -1,6 +1,6 @@
 body {
   font-family: "poppins", sans-serif;
-  background-color: rgb(250, 246, 250);
+  background-color: #f9f7fe;
 }
 
 h1 {
@@ -14,14 +14,8 @@ h1 {
   margin-left: 42px;
 }
 
-h3 {
-  font-size: 20px;
-  line-height: 120%;
-  color: #787878;
-}
-
 p {
-  color: #787878;
+  color: #c9c7cf;
 }
 
 ul {
@@ -36,7 +30,7 @@ li {
   line-height: 1;
   list-style: none;
   margin-left: 35px;
-  color: #787878;
+  color: #c9c7cf;
 }
 
 li:first-letter {

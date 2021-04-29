@@ -11,7 +11,7 @@ h1 {
   line-height: 28px;
   font-weight: 300;
   margin: 0;
-  margin-left: 41px;
+  margin-left: 42px;
 }
 
 h3 {
@@ -94,6 +94,10 @@ a:hover {
 #wind {
   margin-left: 70px;
   color: #787878;
+}
+
+.weather-forecast-date {
+  font-size: 17px;
 }
 
 #forecast {

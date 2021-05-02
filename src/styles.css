@@ -9,13 +9,13 @@ h1 {
   padding-top: 30px;
   padding-left: 0px;
   line-height: 28px;
-  font-weight: 300;
+  font-weight: 550;
   margin: 0;
   margin-left: 42px;
 }
 
 p {
-  color: #c9c7cf;
+  color: #a9a6b3;
 }
 
 ul {
@@ -25,12 +25,11 @@ ul {
 
 li {
   font-size: 16px;
-  font-weight: 100;
   height: 19px;
   line-height: 1;
   list-style: none;
   margin-left: 35px;
-  color: #c9c7cf;
+  color: #a9a6b3;
 }
 
 li:first-letter {
@@ -46,6 +45,11 @@ a:hover {
   color: #885df1;
 }
 
+hr {
+  margin: 30px 67px 5px 40px;
+  color: #e4bad4;
+}
+
 .container {
   padding-top: 30px;
 }
@@ -55,9 +59,35 @@ a:hover {
   max-width: 700px;
   margin: 30px auto;
   padding: 40px;
+  padding-top: 50px;
   background-color: #fff;
   box-shadow: 9px 9px 24px 9px #13223811;
   font-family: "Quicksand", sans-serif;
+}
+
+#cityInput {
+  background: #f9f7fe;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 40px;
+  line-height: 20px;
+  margin-left: 40px;
+}
+
+#searchButton {
+  margin-left: 40px;
+  height: 40px;
+}
+
+#submitPin {
+  margin-left: 40px;
+  background-color: #885df1;
+  border: #885df1;
+  height: 40px;
 }
 
 .weather-icon {
@@ -68,7 +98,7 @@ a:hover {
 
 #temperature {
   font-size: 70px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: left;
   line-height: 1;
 }
@@ -87,7 +117,6 @@ a:hover {
 #Humidity,
 #wind {
   margin-left: 70px;
-  color: #787878;
 }
 
 .weather-forecast-date {
@@ -99,6 +128,7 @@ a:hover {
   text-align: center;
   padding: 10px;
   margin-left: 50px;
+  color: #a9a6b3;
 }
 
 .submitPin {
@@ -114,4 +144,14 @@ a:hover {
 
 .githubLink {
   text-align: center;
+}
+
+.highTemp {
+  color: #e4bad4;
+  font-weight: 700;
+}
+
+.lowTemp {
+  color: #e4bad4;
+  opacity: 0.6;
 }

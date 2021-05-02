@@ -19,27 +19,27 @@
   <body>
    <div class="container">
      <div class="weather-app">       
-        <form class="d-flex justify-content-center" id="search-form">
+        <form id="search-form">
           <div class="row">
             <div class="col-6">
               <input 
                 id = "cityInput"
                 type="search" 
-                placeholder="enter city here..." 
+                placeholder="Enter a city..." 
                 autocomplete="on"
                 class="form-control shadow-sm"
                 />
             </div>
-            <div class="col-3">
+            <div class="col-2">
               <input 
               id = "searchButton"
               type="submit" 
               value="Search"
               class="form-control btn btn-light shadow-sm"/>
             </div>
-            <div class="col-3">
+            <div class="col-2">
               <input
-              class="form-control btn btn-primary shadow-sm w-100" 
+              class="btn btn-primary w-100" 
               id="submitPin" 
               type="submit" 
               value="Current" 
@@ -47,6 +47,8 @@
             </div>
           </div>
       </form>
+
+      <hr>
     
       <h1 id="cityHeading"></h1>
       <ul>

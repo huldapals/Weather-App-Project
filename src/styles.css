@@ -5,9 +5,7 @@ body {
 
 h1 {
   font-size: 50px;
-  padding: 20px;
-  padding-top: 30px;
-  padding-left: 0px;
+  padding: 30px 0px 20px 0px;
   line-height: 28px;
   font-weight: 550;
   margin: 0;
@@ -19,7 +17,7 @@ p {
 }
 
 ul {
-  margin: 0 0 10px;
+  margin: 0px 0px 10px;
   padding: 10px;
 }
 
@@ -62,7 +60,6 @@ hr {
   padding-top: 50px;
   background-color: #fff;
   box-shadow: 9px 9px 24px 9px #13223811;
-  font-family: "Quicksand", sans-serif;
 }
 
 #cityInput {
